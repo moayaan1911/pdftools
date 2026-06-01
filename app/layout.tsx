@@ -6,9 +6,9 @@ import { Header } from "@/components/Header";
 import { Toaster } from "@/components/Toaster";
 import { DownloadCompleteModal } from "@/components/DownloadCompleteModal";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://pdftoolkit.app";
-const SITE_NAME = "PDF Toolkit";
-const TITLE = "PDF Toolkit: 18 Free Browser PDF Tools, No Upload, No Signup";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://18pdf.vercel.app";
+const SITE_NAME = "18PDF";
+const TITLE = "18PDF: 18 Free PDF Tools, No Upload, No Signup";
 const DESC =
   "Free online PDF tools that run in your browser. Merge, split, rotate, convert, edit, watermark, OCR, and more. 18 tools, zero server, 100 percent private. No signup, no upload, no limits.";
 
@@ -98,7 +98,7 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESC,
     images: ["/opengraph-image"],
-    creator: "@pdftoolkit",
+    creator: "@18pdf",
   },
   appleWebApp: {
     capable: true,
@@ -124,8 +124,8 @@ const orgLd = {
   logo: `${SITE_URL}/icon`,
   description: DESC,
   sameAs: [
-    "https://github.com/pdf-toolkit",
-    "https://twitter.com/pdftoolkit",
+    "https://github.com/moayaan1911/18pdf",
+    "https://twitter.com/18pdf",
   ],
 };
 
@@ -185,7 +185,7 @@ const faqLd = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Is PDF Toolkit really free?",
+      name: "Is 18PDF really free?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Yes. All 18 tools are free to use, with no signup, no file size limit, and no watermarks on output.",

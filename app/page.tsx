@@ -137,8 +137,8 @@ export default function Home() {
                 />
 
                 <div className="relative flex items-start justify-between mb-5">
-                  <div className="w-11 h-11 rounded-xl bg-[var(--accent)] text-[var(--accent-foreground)] flex items-center justify-center font-bold text-sm shadow-lg">
-                    PDF
+                  <div className="w-14 h-14 rounded-xl bg-[var(--accent)] text-[var(--accent-foreground)] flex items-center justify-center font-bold text-sm shadow-lg">
+                    18PDF
                   </div>
                   <span className="inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400">
                     <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />

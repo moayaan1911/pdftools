@@ -1,12 +1,31 @@
+# 👨‍💻 About the Developer
+
+<p align="center">
+  <img src="https://emerald-dizzy-stoat-639.mypinata.cloud/ipfs/bafkreiblp6uoh274nzffbcos6d4cxql3zj7lu7z6xvkdhytbd3aqotjsh4?pinataGatewayToken=DFsUmTMRXBF_0KmYgSHbz1ipOKWFjv_rjyvxjq_vHNcdnP0KeJ64G8QQlgmhZyo8" alt="Mohammad Ayaan Siddiqui" width="200" />
+</p>
+
+Assalamualaikum guys! 🙌 This is Mohammad Ayaan Siddiqui (♦moayaan.eth♦). I’m a **Full Stack Blockchain Developer** , **Crypto Investor** and **MBA in Blockchain Management** with **2 years of experience** rocking the Web3 world! 🚀 I’ve worn many hats:
+
+- Research Intern at a Hong Kong-based firm 🇭🇰
+- Founding Engineer at a Netherlands-based firm 🇳🇱
+- Full Stack Intern at a Singapore-based crypto hardware wallet firm 🇸🇬
+- Blockchain Developer at a US-based Bitcoin DeFi project 🇺🇸
+- PG Diploma in Blockchain Management from Cambridge International Qualifications (CIQ) 🇬🇧
+- MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy 🇮🇹
+
+Let’s connect and build something epic! Find me at [moayaan.com](https://moayaan.com) 🌐 or on [X @moayaan1911](https://x.com/moayaan1911)
+
+---
+
 <div align="center">
 
-# PDF Toolkit
+# 18PDF
 
 **18 free PDF tools that run entirely in your browser. Zero server, zero signup, 100% private.**
 
 <p>
-  <a href="https://pdftoolkit.app"><img alt="Live" src="https://img.shields.io/badge/Live-pdftoolkit.app-6366f1?style=for-the-badge"/></a>
-  <a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/USER/pdf-toolkit?style=for-the-badge"/></a>
+  <a href="https://18pdf.vercel.app"><img alt="Live" src="https://img.shields.io/badge/Live-18pdf.vercel.app-6366f1?style=for-the-badge"/></a>
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/moayaan1911/18pdf?style=for-the-badge"/></a>
   <a href="https://nextjs.org"><img alt="Next.js 16" src="https://img.shields.io/badge/Next.js-16-000?style=for-the-badge&logo=next.js&logoColor=white"/></a>
   <a href="https://www.typescriptlang.org"><img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5-3178c6?style=for-the-badge&logo=typescript&logoColor=white"/></a>
   <a href="https://react.dev"><img alt="React 19" src="https://img.shields.io/badge/React-19-61dafb?style=for-the-badge&logo=react&logoColor=black"/></a>
@@ -23,22 +42,22 @@
 
 <br/>
 
-<img src="screenshots/desktop-01-home.png" alt="PDF Toolkit home page" width="900"/>
+<img src="screenshots/desktop-01-home.png" alt="18PDF home page" width="900"/>
 
 <br/>
 <br/>
 
-[**Try it now**](https://pdftoolkit.app) · [**Report bug**](../../issues) · [**Request feature**](../../issues)
+[**Try it now**](https://18pdf.vercel.app) · [**Report bug**](../../issues) · [**Request feature**](../../issues)
 
 </div>
 
 ---
 
-## Why PDF Toolkit
+## Why 18PDF
 
 Most "free" online PDF editors have a hidden cost: your files. They get uploaded to a server, scanned, sometimes sold, and almost always limited to a few operations or a small file size.
 
-**PDF Toolkit is different.** Every tool runs locally in your browser using WebAssembly. Your files never leave your device. There is no signup, no telemetry, no limit, and no premium tier.
+**18PDF is different.** Every tool runs locally in your browser using WebAssembly. Your files never leave your device. There is no signup, no telemetry, no limit, and no premium tier.
 
 | | |
 | --- | --- |
@@ -100,39 +119,39 @@ Organized into four categories. Click any name to try it.
 
 | Tool | What it does |
 | --- | --- |
-| [Merge PDFs](https://pdftoolkit.app/tool/merge) | Combine multiple PDFs into one document, in any order. |
-| [Split PDF](https://pdftoolkit.app/tool/split) | Extract page ranges or every page into a ZIP of separate PDFs. |
-| [Rotate Pages](https://pdftoolkit.app/tool/rotate) | Rotate one, many, or all pages in 90 degree increments. |
-| [Reorder Pages](https://pdftoolkit.app/tool/reorder) | Drag and drop to rearrange page order. Remove pages with one click. |
-| [Extract Pages](https://pdftoolkit.app/tool/extract-pages) | Save selected pages as a new PDF in the original order. |
-| [Batch Process](https://pdftoolkit.app/tool/batch) | Apply one operation to many files at once. Bundles results into a ZIP. |
+| [Merge PDFs](https://18pdf.vercel.app/tool/merge) | Combine multiple PDFs into one document, in any order. |
+| [Split PDF](https://18pdf.vercel.app/tool/split) | Extract page ranges or every page into a ZIP of separate PDFs. |
+| [Rotate Pages](https://18pdf.vercel.app/tool/rotate) | Rotate one, many, or all pages in 90 degree increments. |
+| [Reorder Pages](https://18pdf.vercel.app/tool/reorder) | Drag and drop to rearrange page order. Remove pages with one click. |
+| [Extract Pages](https://18pdf.vercel.app/tool/extract-pages) | Save selected pages as a new PDF in the original order. |
+| [Batch Process](https://18pdf.vercel.app/tool/batch) | Apply one operation to many files at once. Bundles results into a ZIP. |
 
 ### Convert
 
 | Tool | What it does |
 | --- | --- |
-| [PDF to Images](https://pdftoolkit.app/tool/pdf-to-images) | Export every page as PNG or JPEG, bundled into a ZIP. |
-| [Images to PDF](https://pdftoolkit.app/tool/images-to-pdf) | Bundle images into a single PDF. |
-| [Extract Text](https://pdftoolkit.app/tool/extract-text) | Extract the text layer of a PDF. Copy or download as .txt. |
-| [HTML to PDF](https://pdftoolkit.app/tool/html-to-pdf) | Convert HTML markup into a PDF. Templates included. |
-| [OCR Text](https://pdftoolkit.app/tool/ocr) | Recognize text from scanned or image-based PDFs. |
+| [PDF to Images](https://18pdf.vercel.app/tool/pdf-to-images) | Export every page as PNG or JPEG, bundled into a ZIP. |
+| [Images to PDF](https://18pdf.vercel.app/tool/images-to-pdf) | Bundle images into a single PDF. |
+| [Extract Text](https://18pdf.vercel.app/tool/extract-text) | Extract the text layer of a PDF. Copy or download as .txt. |
+| [HTML to PDF](https://18pdf.vercel.app/tool/html-to-pdf) | Convert HTML markup into a PDF. Templates included. |
+| [OCR Text](https://18pdf.vercel.app/tool/ocr) | Recognize text from scanned or image-based PDFs. |
 
 ### Edit
 
 | Tool | What it does |
 | --- | --- |
-| [Page Numbers](https://pdftoolkit.app/tool/page-numbers) | Stamp page numbers in any corner. Formats: `1`, `Page 1`, `1 of N`, `-1-`. |
-| [Watermark](https://pdftoolkit.app/tool/watermark) | Add text or image watermarks. Apply to all, odd, or even pages. |
-| [Edit Metadata](https://pdftoolkit.app/tool/metadata) | Change title, author, subject, keywords, and creator. |
-| [Fill Forms](https://pdftoolkit.app/tool/forms) | Open an AcroForm PDF, fill text fields, checkboxes, and dropdowns, then download. |
-| [Crop Pages](https://pdftoolkit.app/tool/crop) | Trim margins or apply a preset aspect ratio. |
+| [Page Numbers](https://18pdf.vercel.app/tool/page-numbers) | Stamp page numbers in any corner. Formats: `1`, `Page 1`, `1 of N`, `-1-`. |
+| [Watermark](https://18pdf.vercel.app/tool/watermark) | Add text or image watermarks. Apply to all, odd, or even pages. |
+| [Edit Metadata](https://18pdf.vercel.app/tool/metadata) | Change title, author, subject, keywords, and creator. |
+| [Fill Forms](https://18pdf.vercel.app/tool/forms) | Open an AcroForm PDF, fill text fields, checkboxes, and dropdowns, then download. |
+| [Crop Pages](https://18pdf.vercel.app/tool/crop) | Trim margins or apply a preset aspect ratio. |
 
 ### View
 
 | Tool | What it does |
 | --- | --- |
-| [PDF Viewer](https://pdftoolkit.app/tool/viewer) | Read any PDF in a clean, in-browser reader with zoom. |
-| [Compare PDFs](https://pdftoolkit.app/tool/compare) | Open two PDFs side by side and navigate them in sync. |
+| [PDF Viewer](https://18pdf.vercel.app/tool/viewer) | Read any PDF in a clean, in-browser reader with zoom. |
+| [Compare PDFs](https://18pdf.vercel.app/tool/compare) | Open two PDFs side by side and navigate them in sync. |
 
 ---
 
@@ -178,7 +197,7 @@ The architecture is simple: a static site that loads the right library for the j
 
 ## SEO and AI search
 
-PDF Toolkit is built to be findable both by humans and by AI assistants. Every page has rich structured data, every tool is described in a way that an LLM can cite, and the entire app is indexable.
+18PDF is built to be findable both by humans and by AI assistants. Every page has rich structured data, every tool is described in a way that an LLM can cite, and the entire app is indexable.
 
 ### Per-page metadata
 
@@ -192,9 +211,9 @@ Every tool page includes:
 
 ### Files for AI agents
 
-- `/llms.txt` — natural-language description of every tool, formatted for LLM ingestion
-- `/sitemap.xml` — generated for all 19 routes
-- `/robots.txt` — allows all major AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot, Applebot-Extended, Amazonbot, Bytespider, cohere-ai, DuckAssistBot, Meta-ExternalAgent, and others)
+- `/llms.txt` - natural-language description of every tool, formatted for LLM ingestion
+- `/sitemap.xml` - generated for all 22 routes (home, 18 tool pages, FAQ, privacy, OG gallery)
+- `/robots.txt` - allows all major AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot, Applebot-Extended, Amazonbot, Bytespider, cohere-ai, DuckAssistBot, Meta-ExternalAgent, and others)
 
 ### OpenGraph previews
 

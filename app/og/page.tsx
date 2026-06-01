@@ -5,7 +5,7 @@ export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "OG Image Gallery",
-  description: "All Open Graph images generated for PDF Toolkit: home + every tool page. Preview, copy, and download.",
+  description: "All Open Graph images generated for 18PDF: home + every tool page. Preview, copy, and download.",
   robots: { index: false, follow: false },
 };
 
@@ -36,7 +36,7 @@ export default function OgGalleryPage() {
           OG Image Gallery
         </h1>
         <p className="text-sm text-[var(--text-secondary)] max-w-2xl">
-          Every Open Graph image PDF Toolkit generates: the static home
+          Every Open Graph image 18PDF generates: the static home
           image and one dynamic gradient per tool. Each image is 1200x630
           PNG, the standard size for Twitter, LinkedIn, Slack, Discord, and
           Facebook previews.
@@ -49,7 +49,7 @@ export default function OgGalleryPage() {
       <div className="grid sm:grid-cols-2 gap-5">
         {ITEMS.map((item) => {
           const fullUrl =
-            (process.env.NEXT_PUBLIC_SITE_URL || "https://pdftoolkit.app") +
+            (process.env.NEXT_PUBLIC_SITE_URL || "https://18pdf.vercel.app") +
             item.url;
           return (
             <article

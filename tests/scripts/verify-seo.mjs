@@ -11,7 +11,7 @@ import { chromium } from "playwright";
   // 1. home page metadata
   await page.goto("http://localhost:4173/", { waitUntil: "domcontentloaded" });
   const homeTitle = await page.title();
-  if (homeTitle.includes("PDF Toolkit") && homeTitle.includes("18")) pass("home title");
+  if (homeTitle.includes("18PDF") && homeTitle.includes("18")) pass("home title");
   else fail("home title: " + homeTitle);
 
   const homeDesc = await page.locator('meta[name="description"]').first().getAttribute("content");
@@ -88,7 +88,7 @@ import { chromium } from "playwright";
   const llmsResp = await page.goto("http://localhost:4173/llms.txt");
   if (llmsResp?.status() === 200) {
     const txt = await llmsResp.text();
-    if (txt.includes("PDF Toolkit") && txt.includes("## Tools")) pass("llms.txt");
+    if (txt.includes("18PDF") && txt.includes("## Tools")) pass("llms.txt");
     else fail("llms.txt content");
   } else fail("llms.txt: " + llmsResp?.status());
 

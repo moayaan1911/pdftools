@@ -1,5 +1,5 @@
 /* TEAM */
-Built and maintained by the PDF Toolkit team.
+Built and maintained by the 18PDF team.
 
 /* SITE */
 Last update: 2026/06/01

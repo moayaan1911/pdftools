@@ -3,7 +3,7 @@ import { TOOLS } from "@/lib/tools";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "PDF Toolkit: 18 free browser PDF tools";
+export const alt = "18PDF: 18 free browser PDF tools";
 
 export const runtime = "nodejs";
 
@@ -44,12 +44,11 @@ export default function OgImage() {
               alignItems: "center",
               justifyContent: "center",
               fontWeight: 800,
-              fontSize: 22,
+              fontSize: 18,
             }}
           >
-            PDF
+            18PDF
           </div>
-          PDF Toolkit
         </div>
 
         <div
@@ -111,7 +110,7 @@ export default function OgImage() {
             border: "1px solid rgba(255,255,255,0.25)",
           }}
         >
-          pdftoolkit.app
+          18pdf.vercel.app
         </div>
       </div>
     ),

@@ -23,7 +23,7 @@ const TEMPLATES = {
 <p>This quarter we shipped 18 new tools and improved performance by 40%.</p>
 <h2>Highlights</h2>
 <ul>
-  <li>Launched the PDF Toolkit</li>
+  <li>Launched the 18PDF</li>
   <li>Migrated to Next.js 16</li>
   <li>Reached 10K monthly users</li>
 </ul>

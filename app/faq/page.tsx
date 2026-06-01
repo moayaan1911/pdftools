@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Frequently Asked Questions",
-  description: "Answers to common questions about PDF Toolkit: privacy, limits, formats, how files are processed, and more.",
+  description: "Answers to common questions about 18PDF: privacy, limits, formats, how files are processed, and more.",
   alternates: { canonical: "/faq" },
 };
 
@@ -20,11 +20,11 @@ const FAQ: { category: string; items: { q: string; a: string }[] }[] = [
         a: "No. There is no analytics, no cookies, no fingerprinting, and no telemetry. The only state stored on your device is your chosen accent color and dark or light mode, both kept in local storage.",
       },
       {
-        q: "Can anyone at PDF Toolkit see my files?",
+        q: "Can anyone at 18PDF see my files?",
         a: "No one can. The files never reach our infrastructure. There is no backend that ingests, processes, or stores user content.",
       },
       {
-        q: "Is PDF Toolkit safe to use on a public or shared computer?",
+        q: "Is 18PDF safe to use on a public or shared computer?",
         a: "Yes. Because nothing is stored, closing the tab is enough to clear the work from memory. There is no account to log out of.",
       },
     ],
@@ -33,7 +33,7 @@ const FAQ: { category: string; items: { q: string; a: string }[] }[] = [
     category: "Pricing and limits",
     items: [
       {
-        q: "Is PDF Toolkit really free?",
+        q: "Is 18PDF really free?",
         a: "Yes. All 18 tools are free to use, with no signup, no file size limit, and no watermarks on output. There is no paid tier.",
       },
       {
@@ -42,7 +42,7 @@ const FAQ: { category: string; items: { q: string; a: string }[] }[] = [
       },
       {
         q: "Why is it free? Who pays for it?",
-        a: "PDF Toolkit is built and maintained by a solo developer. It runs on cheap static hosting. There is no funding ask, but a tip on the Buy Me a Coffee page is appreciated if the tool saved you time.",
+        a: "18PDF is built and maintained by a solo developer. It runs on cheap static hosting. There is no funding ask, but a tip on the Buy Me a Coffee page is appreciated if the tool saved you time.",
       },
     ],
   },
@@ -71,7 +71,7 @@ const FAQ: { category: string; items: { q: string; a: string }[] }[] = [
     category: "Offline and devices",
     items: [
       {
-        q: "Can I use PDF Toolkit offline?",
+        q: "Can I use 18PDF offline?",
         a: "After the page loads, navigation and most tools continue to work without a network connection. The OCR tool requires the Tesseract worker, which is cached after the first use.",
       },
       {
@@ -79,7 +79,7 @@ const FAQ: { category: string; items: { q: string; a: string }[] }[] = [
         a: "Any modern desktop or mobile browser. iOS, Android, Windows, macOS, Linux, ChromeOS. The app requires JavaScript and WebAssembly support, which means a browser released after 2017.",
       },
       {
-        q: "Does PDF Toolkit work on iPad and iPhone?",
+        q: "Does 18PDF work on iPad and iPhone?",
         a: "Yes. Every tool is verified on iPhone 15 viewport. Touch interactions are first class: tap to select pages, drag to reorder, and pinch to zoom in the viewer.",
       },
     ],
@@ -111,7 +111,7 @@ export default function FAQPage() {
           Frequently Asked Questions
         </h1>
         <p className="text-sm text-[var(--text-secondary)]">
-          Everything you need to know about PDF Toolkit.
+          Everything you need to know about 18PDF.
         </p>
       </header>
 

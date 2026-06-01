@@ -64,21 +64,21 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         <motion.a
           href="/"
-          className="flex items-center gap-2.5 group"
+          className="flex items-center gap-3 group"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
         >
-          <div className="relative w-9 h-9 rounded-xl bg-gradient-to-br from-[var(--accent)] to-[hsl(calc(var(--accent-h)+40)_var(--accent-s)_var(--accent-l))] flex items-center justify-center shadow-lg glow">
-            <span className="text-white font-bold text-sm">PDF</span>
+          <div className="relative w-11 h-11 rounded-xl bg-gradient-to-br from-[var(--accent)] to-[hsl(calc(var(--accent-h)+40)_var(--accent-s)_var(--accent-l))] flex items-center justify-center shadow-lg glow">
+            <span className="text-white font-bold text-[15px] tracking-tight">18PDF</span>
             <motion.div
               className="absolute inset-0 rounded-xl"
               animate={{ boxShadow: ["0 0 0 0 var(--accent-glow)", "0 0 20px 4px var(--accent-glow)", "0 0 0 0 var(--accent-glow)"] }}
               transition={{ duration: 2, repeat: Infinity }}
             />
           </div>
-          <span className="font-semibold text-base hidden sm:block">
-            <span className="text-gradient">PDF</span>
-            <span className="text-[var(--text-primary)]"> Toolkit</span>
+          <span className="font-semibold text-lg hidden sm:block">
+            <span className="text-gradient">18</span>
+            <span className="text-[var(--text-primary)]">PDF</span>
           </span>
         </motion.a>
 

@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "PDF Toolkit",
-    short_name: "PDF Toolkit",
+    name: "18PDF",
+    short_name: "18PDF",
     description: "18 free PDF tools that run in your browser. No upload, no signup.",
     start_url: "/",
     display: "standalone",

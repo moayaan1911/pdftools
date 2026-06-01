@@ -117,7 +117,7 @@ export function DownloadCompleteModal() {
             <div className="flex items-center gap-2 p-3 rounded-xl bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20">
               <Heart className="w-4 h-4 text-amber-600 dark:text-amber-400 flex-shrink-0" />
               <p className="text-xs text-[var(--text-secondary)] flex-1">
-                Support PDF Toolkit, built by a solo dev
+                Support 18PDF, built by a solo dev
               </p>
               <a
                 href="https://moayaan.com/support"

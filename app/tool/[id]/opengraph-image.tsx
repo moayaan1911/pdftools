@@ -37,6 +37,7 @@ export default async function ToolOgImage(
   const accentHue = (baseHue + 40) % 360;
   const grad1 = `hsl(${baseHue} 70% 55%)`;
   const grad2 = `hsl(${accentHue} 70% 60%)`;
+  const accentText = `hsl(${baseHue} 70% 45%)`;
 
   return new ImageResponse(
     (
@@ -59,18 +60,16 @@ export default async function ToolOgImage(
               height: 44,
               borderRadius: 10,
               background: "white",
-              color: `hsl(${baseHue} 70% 45%)`,
+              color: accentText,
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               fontWeight: 800,
-              fontSize: 16,
-              marginRight: 12,
+              fontSize: 12,
             }}
           >
-            PDF
+            18PDF
           </div>
-          PDF Toolkit
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", marginTop: 100 }}>

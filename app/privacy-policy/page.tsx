@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "How PDF Toolkit handles your data: the short answer is, we do not. Files are processed locally in your browser and never reach a server.",
+  description: "How 18PDF handles your data: the short answer is, we do not. Files are processed locally in your browser and never reach a server.",
   alternates: { canonical: "/privacy-policy" },
 };
 
@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
         <section>
           <h2 className="text-base font-semibold text-[var(--text-primary)] mb-2">The short version</h2>
           <p>
-            PDF Toolkit does not collect, store, or transmit your files. Every
+            18PDF does not collect, store, or transmit your files. Every
             operation runs locally in your browser. We do not have a backend
             that processes user content. There is no account system, no
             analytics, and no tracking.
@@ -46,7 +46,7 @@ export default function PrivacyPolicyPage() {
         <section>
           <h2 className="text-base font-semibold text-[var(--text-primary)] mb-2">What runs in your browser</h2>
           <p>
-            PDF Toolkit loads the following libraries into your browser to
+            18PDF loads the following libraries into your browser to
             process files locally:
           </p>
           <ul className="list-disc pl-6 space-y-1.5">
@@ -82,7 +82,7 @@ export default function PrivacyPolicyPage() {
           </p>
           <ul className="list-disc pl-6 space-y-1.5">
             <li>The OCR tool downloads the Tesseract English language data on first use. Subsequent uses are served from your browser cache.</li>
-            <li>If you click an external link such as Buy Me a Coffee, GitHub, or LoomLess, your browser navigates to that site. Their privacy policies apply once you leave PDF Toolkit.</li>
+            <li>If you click an external link such as Buy Me a Coffee, GitHub, or LoomLess, your browser navigates to that site. Their privacy policies apply once you leave 18PDF.</li>
           </ul>
         </section>
 
@@ -100,7 +100,7 @@ export default function PrivacyPolicyPage() {
         <section>
           <h2 className="text-base font-semibold text-[var(--text-primary)] mb-2">Children&apos;s privacy</h2>
           <p>
-            PDF Toolkit does not target children under 13 and does not
+            18PDF does not target children under 13 and does not
             knowingly collect any information from children. Since the app
             does not collect any information from anyone, this is a
             non issue in practice.

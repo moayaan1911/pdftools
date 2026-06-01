@@ -15,7 +15,7 @@ import { chromium } from "playwright";
   const modalVisible = await page.locator('text=Your file is ready').isVisible().catch(() => false);
   const loomless = await page.locator('text=LoomLess').isVisible().catch(() => false);
   const iman = await page.locator('text=ImanVibes').isVisible().catch(() => false);
-  const support = await page.locator('text=Support PDF Toolkit').isVisible().catch(() => false);
+  const support = await page.locator('text=Support 18PDF').isVisible().catch(() => false);
   console.log("modal visible:", modalVisible);
   console.log("LoomLess:", loomless, "ImanVibes:", iman, "Support line:", support);
   await page.screenshot({ path: "/tmp/modal-desktop.png" });
