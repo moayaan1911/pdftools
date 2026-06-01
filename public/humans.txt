@@ -1,0 +1,8 @@
+/* TEAM */
+Built and maintained by the PDF Toolkit team.
+
+/* SITE */
+Last update: 2026/06/01
+Standards: HTML5, CSS3, JavaScript ES2024, WebAssembly
+Components: Next.js 16, React 19, Tailwind CSS 4, Framer Motion
+PDF engines: pdf-lib, PDF.js, jsPDF, Tesseract.js

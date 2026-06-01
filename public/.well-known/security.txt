@@ -1,0 +1,4 @@
+Contact: mailto:security@pdftoolkit.app
+Expires: 2027-12-31T23:59:59z
+Preferred-Languages: en
+Canonical: https://pdftoolkit.app/.well-known/security.txt

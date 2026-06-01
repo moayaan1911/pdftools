@@ -1,0 +1,46 @@
+# PDF Toolkit
+
+> 18 free, browser-based PDF tools. Zero server, zero signup, 100% private. Files never leave the user's device.
+
+PDF Toolkit is a client-side web application that runs entirely in the browser using WebAssembly. It provides 18 common PDF operations: merge, split, rotate, reorder, convert to and from images, extract text, OCR scanned documents, add page numbers, add watermarks, edit metadata, fill AcroForm fields, crop pages, extract selected pages, batch process, view, and compare PDFs.
+
+The site is built with Next.js 16, React 19, pdf-lib, PDF.js, jsPDF, and Tesseract.js. All processing happens in the user's browser. There is no backend, no signup, no file size limits, and no tracking.
+
+## Tools
+
+- [Merge PDFs](https://pdftoolkit.app/tool/merge): Combine multiple PDFs into one document, in any order. Use cases: yearly statement assembly, contract cover-page stitching, chapter collection.
+- [Split PDF](https://pdftoolkit.app/tool/split): Extract page ranges or every page into a ZIP of separate PDFs. Supports ranges like 1-3, 5, 7-9.
+- [Rotate Pages](https://pdftoolkit.app/tool/rotate): Rotate one, many, or all pages of a PDF in 90 degree increments. Per-page buttons plus batch select.
+- [Reorder Pages](https://pdftoolkit.app/tool/reorder): Drag and drop to rearrange page order. Remove unwanted pages with a single click.
+- [PDF to Images](https://pdftoolkit.app/tool/pdf-to-images): Export every page of a PDF as PNG or JPEG, bundled into a ZIP. Resolutions 1x, 2x, 3x, 4x.
+- [Images to PDF](https://pdftoolkit.app/tool/images-to-pdf): Combine PNG, JPEG, WebP, or GIF images into a single PDF. Choose A4, Letter, or auto page size, and fit, fill, or center placement.
+- [Extract Text](https://pdftoolkit.app/tool/extract-text): Extract the text layer of a PDF, copy to clipboard, or download as a .txt file. Works on PDFs with a text layer.
+- [HTML to PDF](https://pdftoolkit.app/tool/html-to-pdf): Convert HTML markup into a PDF. Built-in templates (invoice, report, letter), paste your own HTML, or upload an .html file.
+- [Page Numbers](https://pdftoolkit.app/tool/page-numbers): Stamp page numbers on every page. Formats: 1, Page 1, 1 of N, -1-. Six positions.
+- [Watermark](https://pdftoolkit.app/tool/watermark): Add text or image watermarks to all, odd, or even pages. Adjust color, opacity, rotation, font size.
+- [Edit Metadata](https://pdftoolkit.app/tool/metadata): Edit title, author, subject, keywords, and creator fields. The Producer field is set automatically by the library and cannot be changed from the UI.
+- [Fill Forms](https://pdftoolkit.app/tool/forms): Open a PDF with AcroForm fields, fill text, checkboxes, dropdowns, and radio groups, then download.
+- [Crop Pages](https://pdftoolkit.app/tool/crop): Crop every page by trimming margins, or apply a preset aspect ratio: square, 1:1, 16:9, A4, or Letter.
+- [Extract Pages](https://pdftoolkit.app/tool/extract-pages): Pick specific pages by clicking thumbnails, or enter a range. Saves selected pages as a new PDF in the original order.
+- [Batch Process](https://pdftoolkit.app/tool/batch): Apply one operation (rotate 90 degrees, or add page numbers) to many files at once. Bundles results into a ZIP.
+- [PDF Viewer](https://pdftoolkit.app/tool/viewer): Read any PDF in a clean, in-browser reader with page navigation and zoom.
+- [Compare PDFs](https://pdftoolkit.app/tool/compare): Open two PDFs side by side and navigate them in sync. Useful for comparing drafts against finals.
+- [OCR Text](https://pdftoolkit.app/tool/ocr): Run optical character recognition on scanned or image-based PDFs. Renders every page, recognizes text, presents it as copyable plain text.
+
+## Key facts
+
+- Files are never uploaded to a server. All processing is local in the user's browser via WebAssembly.
+- The app is free. There is no signup, no login, no tracking, no watermarks on output, and no file size limit.
+- Supported input formats for images-to-pdf: PNG, JPEG, WebP, GIF.
+- Supported output formats for pdf-to-images: PNG, JPEG.
+- The app supports 8 accent color themes: blue, violet, emerald, rose, amber, cyan, coral, and lime.
+- Dark mode is available; the choice is persisted in local storage.
+- The app is open-source and built with pdf-lib, PDF.js, jsPDF, and Tesseract.js.
+
+## Privacy
+
+PDF Toolkit does not collect, store, or transmit any user files or personal data. Files are processed entirely in the user's browser. The only network request after page load is fetching the static page assets. No analytics, no cookies, no third-party trackers.
+
+## Contact
+
+For questions, feedback, or to report an issue, open an issue on the project's repository or send email to the address listed on the site.
