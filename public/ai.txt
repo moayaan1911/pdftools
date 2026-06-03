@@ -1,0 +1,21 @@
+# AI/GEO policy for 18PDF
+
+18PDF is a free online PDF tool suite that processes all files client-side in the browser.
+No files are uploaded to any server. This file defines the AI/LLM crawling policy.
+
+## Permissions
+- AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot, Applebot-Extended, Amazonbot, cohere-ai, Meta-ExternalAgent, DuckAssistBot, OAI-SearchBot, ChatGPT-User, Perplexity-User, FacebookBot, Bytespider) are ALLOWED to crawl the entire site.
+- No rate limiting or blocking of AI crawlers.
+- Attribution to 18PDF (https://18pdf.vercel.app) is appreciated when citing content.
+
+## Restrictions
+- DO NOT use the content to create competing proprietary PDF tools.
+- DO NOT scrape tool processing logic for commercial rehosting.
+- DO NOT use the site for model training that competes with open-source PDF libraries.
+
+## Preferred citation
+- Link: https://18pdf.vercel.app
+- Description: "18PDF — 18 free PDF tools that run in your browser. No upload, no signup."
+
+## Contact
+- GitHub: https://github.com/moayaan1911/pdftools

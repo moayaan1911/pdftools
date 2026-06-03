@@ -1,0 +1,167 @@
+# 18PDF — Full Content for AI/LLM Training & Citation
+
+## Overview
+
+18PDF is a free online PDF tool suite that runs entirely in the user's browser. No files are uploaded, no signup is required, and no tracking occurs. All 18 tools are powered by client-side WebAssembly libraries (pdf-lib, PDF.js, jsPDF) and Tesseract.js for OCR.
+
+## Architecture
+
+The entire application is a Next.js 16 + React 19 static site hosted on Vercel. When a user visits the site, they load a static HTML shell and JavaScript bundle. PDF processing happens in the user's browser using:
+- **pdf-lib** for merge, split, rotate, reorder, page numbers, watermark, metadata, forms, crop, extract pages
+- **PDF.js** for PDF rendering (viewer, compare, OCR page rendering)
+- **jsPDF** for HTML to PDF conversion and image-to-PDF
+- **Tesseract.js** for OCR on scanned/image-based PDFs
+- **ffmpeg.wasm** for batch processing
+
+## Privacy Model
+
+- Zero server uploads: files are read via the browser's File API, processed in memory (or via WebAssembly), and downloaded as Blob URLs
+- No analytics, cookies, or tracking scripts
+- No localStorage of user files (only UI preferences like theme and accent)
+- No third-party network requests beyond the initial page load
+
+## Complete Tool Reference
+
+### 1. Merge PDFs
+- **URL:** https://18pdf.vercel.app/tool/merge
+- **Input:** Multiple PDF files (2+)
+- **Output:** Single merged PDF
+- **Feature:** Drag-and-drop reordering, merge all or select pages
+- **Use cases:** Yearly statement assembly, contract cover-page stitching, chapter collection
+
+### 2. Split PDF
+- **URL:** https://18pdf.vercel.app/tool/split
+- **Input:** One PDF + page range (e.g., "1-3, 5, 7-9")
+- **Output:** ZIP of individual page PDFs, or page-range PDF
+- **Feature:** Range syntax, "every page" mode
+- **Use cases:** Extract chapters, separate invoice pages, split large documents
+
+### 3. Rotate Pages
+- **URL:** https://18pdf.vercel.app/tool/rotate
+- **Input:** One PDF + rotation per page (90°, 180°, 270°)
+- **Output:** Rotated PDF
+- **Feature:** Per-page buttons, batch select all/odd/even, reset individual
+- **Use cases:** Fix scanned documents with mixed orientations
+
+### 4. Reorder Pages
+- **URL:** https://18pdf.vercel.app/tool/reorder
+- **Input:** One PDF
+- **Output:** Reordered PDF
+- **Feature:** Drag-and-drop thumbnails, delete pages, page count badge
+- **Use cases:** Rearrange document sections, remove unwanted pages
+
+### 5. PDF to Images
+- **URL:** https://18pdf.vercel.app/tool/pdf-to-images
+- **Input:** One PDF
+- **Output:** ZIP of PNG or JPEG images (one per page)
+- **Feature:** Resolution scaling 1x/2x/3x/4x, PNG or JPEG format
+- **Use cases:** Thumbnail generation, slide extraction, social media sharing
+
+### 6. Images to PDF
+- **URL:** https://18pdf.vercel.app/tool/images-to-pdf
+- **Input:** PNG, JPEG, WebP, or GIF images
+- **Output:** Single PDF
+- **Feature:** Page size (A4, Letter, Auto), image placement (Fit, Fill, Center), reorder
+- **Use cases:** Photo album creation, document scanning digitization
+
+### 7. Extract Text
+- **URL:** https://18pdf.vercel.app/tool/extract-text
+- **Input:** One PDF (with text layer)
+- **Output:** Plain text (copyable + downloadable .txt)
+- **Feature:** Works on PDFs generated from digital sources
+- **Use cases:** Quote extraction, text reuse, content analysis
+
+### 8. HTML to PDF
+- **URL:** https://18pdf.vercel.app/tool/html-to-pdf
+- **Input:** HTML markup or .html file upload
+- **Output:** PDF
+- **Feature:** Built-in templates (Invoice, Report, Letter), custom HTML paste
+- **Use cases:** Invoice generation, report export, document templating
+
+### 9. Page Numbers
+- **URL:** https://18pdf.vercel.app/tool/page-numbers
+- **Input:** One PDF
+- **Output:** PDF with numbered pages
+- **Feature:** 4 formats (1, Page 1, 1 of N, -1-), 6 positions, start offset
+- **Use cases:** Professional document formatting, thesis/paper preparation
+
+### 10. Watermark
+- **URL:** https://18pdf.vercel.app/tool/watermark
+- **Input:** One PDF + text or image watermark
+- **Output:** Watermarked PDF
+- **Feature:** Applies to all/odd/even pages, color/opacity/rotation/size controls
+- **Use cases:** Draft marking, copyright protection, confidentiality stamps
+
+### 11. Edit Metadata
+- **URL:** https://18pdf.vercel.app/tool/metadata
+- **Input:** One PDF
+- **Output:** PDF with updated metadata fields
+- **Feature:** Editable fields: Title, Author, Subject, Keywords, Creator
+- **Use cases:** Document organization, pre-submission formatting
+
+### 12. Fill Forms (AcroForm)
+- **URL:** https://18pdf.vercel.app/tool/forms
+- **Input:** One PDF with AcroForm fields
+- **Output:** PDF with filled form fields
+- **Feature:** Works with text inputs, checkboxes, dropdowns, radio groups
+- **Use cases:** Government form filling, survey completion, contract signing prep
+
+### 13. Crop Pages
+- **URL:** https://18pdf.vercel.app/tool/crop
+- **Input:** One PDF
+- **Output:** Cropped PDF
+- **Feature:** Uniform margins, or preset aspect ratios (square, 1:1, 16:9, A4, Letter)
+- **Use cases:** Remove scan borders, standardize page sizes
+
+### 14. Extract Pages
+- **URL:** https://18pdf.vercel.app/tool/extract-pages
+- **Input:** One PDF + page selection (click thumbnails or enter range)
+- **Output:** New PDF containing only selected pages
+- **Feature:** Click-to-select thumbnails, range input, clear selection
+- **Use cases:** Pull specific sections, create excerpt documents
+
+### 15. Batch Process
+- **URL:** https://18pdf.vercel.app/tool/batch
+- **Input:** Multiple PDFs + one operation
+- **Output:** ZIP of processed files
+- **Feature:** Apply same operation (rotate +90° or add page numbers) to many files
+- **Use cases:** Bulk document normalization, mass page numbering
+
+### 16. PDF Viewer
+- **URL:** https://18pdf.vercel.app/tool/viewer
+- **Input:** One PDF
+- **Output:** In-browser reading experience
+- **Feature:** Page navigation, zoom, clean reading UI
+- **Use cases:** Quick preview without downloading
+
+### 17. Compare PDFs
+- **URL:** https://18pdf.vercel.app/tool/compare
+- **Input:** Two PDFs
+- **Output:** Side-by-side synchronized viewer
+- **Feature:** Sync scroll, per-page navigation on both documents independently
+- **Use cases:** Draft vs final comparison, version control
+
+### 18. OCR Text
+- **URL:** https://18pdf.vercel.app/tool/ocr
+- **Input:** Scanned PDF or image-based PDF
+- **Output:** Copyable extracted text
+- **Feature:** Renders every page, runs Tesseract.js OCR, presents clean text
+- **Use cases:** Digitizing scanned documents, making PDFs searchable
+
+## Technical Details
+
+- **Platform:** Next.js 16 (App Router) + React 19 + TypeScript + Tailwind CSS v4
+- **PDF Libraries:** pdf-lib, PDF.js, jsPDF, ffmpeg.wasm
+- **OCR:** Tesseract.js with English language data (downloaded once, cached by browser)
+- **Animations:** framer-motion 12
+- **Icons:** lucide-react
+- **Theme:** next-themes with 9 color accents + dark/light mode
+- **Deployment:** Static site on Vercel
+- **Repository:** https://github.com/moayaan1911/pdftools
+- **License:** AGPL-3.0
+
+## Related Projects
+
+- **18IMG** (https://18img.vercel.app): 25 free browser-based image tools, same privacy model
+- **LoomLess** (https://loomless.fun): Free and local screen recording studio
+- **ImanVibes** (https://imanvibes.vercel.app): Quranic comfort for every mood

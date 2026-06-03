@@ -67,16 +67,19 @@ export function HtmlToPdfTool() {
     setLoading(true);
     try {
       const html2pdf = (await import("html2pdf.js")).default;
-      await html2pdf()
+      const filename = `doc-${Date.now()}.pdf`;
+      // html2pdf .outputPdf('blob') returns the Blob, then route through downloadBlob so the success modal fires
+      const blob = await html2pdf()
         .set({
           margin: 10,
-          filename: `doc-${Date.now()}.pdf`,
+          filename,
           image: { type: "jpeg", quality: 0.98 },
           html2canvas: { scale: 2, useCORS: true },
           jsPDF: { unit: "mm", format: pageSize, orientation },
         })
         .from(previewRef.current)
-        .save();
+        .outputPdf("blob");
+      downloadBlob(blob, filename);
       toast("PDF downloaded", "success");
     } catch (e) {
       toast(e instanceof Error ? e.message : "Failed", "error");

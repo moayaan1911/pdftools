@@ -192,12 +192,13 @@ export function DownloadCompleteModal() {
                   initial={{ y: 10, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.6, duration: 0.4 }}
-                  className="relative flex items-center gap-2.5 p-3 rounded-xl border border-amber-500/30 overflow-hidden"
+                  className="relative flex items-center gap-2.5 p-3 rounded-xl border border-amber-500/30 overflow-hidden cursor-pointer"
                   style={{
                     background:
                       "linear-gradient(110deg, rgba(245, 158, 11, 0.08) 0%, rgba(245, 158, 11, 0.18) 50%, rgba(245, 158, 11, 0.08) 100%)",
                     backgroundSize: "200% 100%",
                   }}
+                  onClick={() => window.open("https://moayaan.com/support", "_blank", "noopener noreferrer")}
                 >
                   <motion.div
                     className="absolute inset-0"
@@ -220,15 +221,10 @@ export function DownloadCompleteModal() {
                   <p className="relative text-xs text-[var(--text-primary)] flex-1 font-medium">
                     Support 18PDF, built by a solo dev
                   </p>
-                  <a
-                    href="https://moayaan.com/support"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="relative inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-amber-500 hover:bg-amber-600 text-white text-xs font-semibold transition-colors shadow-sm"
-                  >
+                  <div className="relative inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-amber-500 text-white text-xs font-semibold shadow-sm pointer-events-none">
                     <Coffee className="w-3 h-3" />
                     Tip
-                  </a>
+                  </div>
                 </motion.div>
               </div>
             </div>

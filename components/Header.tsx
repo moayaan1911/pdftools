@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Sun, Moon, Palette, Coffee } from "lucide-react";
+import { Sun, Moon, Palette, Coffee, ExternalLink } from "lucide-react";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
 
@@ -29,6 +29,7 @@ const ACCENTS = [
   { id: "cyan", hue: 185, label: "Cyan" },
   { id: "coral", hue: 12, label: "Coral" },
   { id: "lime", hue: 88, label: "Lime" },
+  { id: "magenta", hue: 310, label: "Magenta" },
 ];
 
 export function Header() {
@@ -69,7 +70,7 @@ export function Header() {
           whileTap={{ scale: 0.98 }}
         >
           <div className="relative w-11 h-11 rounded-xl bg-gradient-to-br from-[var(--accent)] to-[hsl(calc(var(--accent-h)+40)_var(--accent-s)_var(--accent-l))] flex items-center justify-center shadow-lg glow">
-            <span className="text-white font-bold text-[15px] tracking-tight">18PDF</span>
+            <span className="text-white font-bold text-[15px] tracking-tight">PDF</span>
             <motion.div
               className="absolute inset-0 rounded-xl"
               animate={{ boxShadow: ["0 0 0 0 var(--accent-glow)", "0 0 20px 4px var(--accent-glow)", "0 0 0 0 var(--accent-glow)"] }}
@@ -82,21 +83,52 @@ export function Header() {
           </span>
         </motion.a>
 
-        <div className="flex items-center gap-1.5">
-          <div className="hidden md:flex items-center gap-1 mr-1 pr-2 border-r border-[var(--border)]">
-            <Link
-              href="/faq"
-              className="px-2.5 py-1.5 rounded-lg text-xs font-medium text-[var(--text-secondary)] hover:bg-[var(--bg-elevated)] hover:text-[var(--text-primary)] transition-colors"
+        <div className="hidden md:flex items-center gap-1 flex-1 justify-center">
+            <motion.a
+              href="https://18img.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05, y: -1 }}
+              whileTap={{ scale: 0.95 }}
+              className="group flex items-center gap-1.5 px-2.5 h-9 rounded-lg text-xs font-bold text-[var(--accent)] bg-[var(--accent-soft)] hover:bg-[var(--accent)] hover:text-[var(--accent-foreground)] border border-[var(--accent)]/30 transition-colors"
+              aria-label="Open 18IMG (sister site)"
+              title="18IMG — image tools"
             >
-              FAQ
-            </Link>
-            <Link
-              href="/privacy-policy"
-              className="px-2.5 py-1.5 rounded-lg text-xs font-medium text-[var(--text-secondary)] hover:bg-[var(--bg-elevated)] hover:text-[var(--text-primary)] transition-colors"
+              <span className="tracking-tight">18IMG</span>
+              <ExternalLink className="w-3 h-3 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all" />
+            </motion.a>
+            <motion.a
+              href="https://loomless.fun"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05, y: -1 }}
+              whileTap={{ scale: 0.95 }}
+              className="group flex items-center gap-1.5 px-2.5 h-9 rounded-lg text-xs font-bold text-[var(--accent)] bg-[var(--accent-soft)] hover:bg-[var(--accent)] hover:text-[var(--accent-foreground)] border border-[var(--accent)]/30 transition-colors"
+              aria-label="Open LoomLess"
+              title="LoomLess — screen recording"
             >
-              Privacy
-            </Link>
+              <span className="tracking-tight">LoomLess</span>
+              <ExternalLink className="w-3 h-3 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all" />
+            </motion.a>
+            <motion.a
+              href="https://imanvibes.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05, y: -1 }}
+              whileTap={{ scale: 0.95 }}
+              className="group flex items-center gap-1.5 px-2.5 h-9 rounded-lg text-xs font-bold text-[var(--accent)] bg-[var(--accent-soft)] hover:bg-[var(--accent)] hover:text-[var(--accent-foreground)] border border-[var(--accent)]/30 transition-colors"
+              aria-label="Open ImanVibes"
+              title="ImanVibes — Quran for every mood"
+            >
+              <span className="tracking-tight">ImanVibes</span>
+              <ExternalLink className="w-3 h-3 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all" />
+            </motion.a>
           </div>
+
+        <div className="flex items-center gap-1.5">
+          <Link href="/faq" className="hidden md:inline-block px-2.5 py-1.5 rounded-lg text-xs font-medium text-[var(--text-secondary)] hover:bg-[var(--bg-elevated)] hover:text-[var(--text-primary)] transition-colors">FAQ</Link>
+          <Link href="/privacy-policy" className="hidden md:inline-block px-2.5 py-1.5 rounded-lg text-xs font-medium text-[var(--text-secondary)] hover:bg-[var(--bg-elevated)] hover:text-[var(--text-primary)] transition-colors">Privacy</Link>
+          <span className="hidden md:inline-block w-px h-5 bg-[var(--border)] mx-0.5" />
 
           <motion.a
             href="https://moayaan.com/support"
